@@ -4,7 +4,10 @@
 // import CountryFunc from "./user/components/CountryFunc";
 // import CounterFunc from "./Counter/CounterFunc";
 
-import CounterClass from "./Counter/CounterClass";
+import CityFuncProps from "./HomeWorks/CityFuncProps";
+import CountryFuncProps from "./HomeWorks/CountryFuncProps";
+
+// import CounterClass from "./Counter/CounterClass";
 
 const App = () => {
   return (
@@ -14,7 +17,11 @@ const App = () => {
       <CountryFunc />
       <CityFunc />
       <CounterFunc /> */}
-      <CounterClass />
+      {/* <CounterClass /> */}
+
+      <CountryFuncProps changeCountryProp="India" changeCityProp="Delhi" />
+      <CityFuncProps changeCityProp="Nevada" changeStateProp="Las Vegas" />
+
     </>
   );
 };
