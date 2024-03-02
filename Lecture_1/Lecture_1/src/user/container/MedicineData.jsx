@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-import Card from "../components/Card";
+import CardTwo from "../components/CardTwo";
 // eslint-disable-next-line no-unused-vars
 const dataOfMedicine = [
   {
@@ -65,7 +65,7 @@ const MedicineData = () => {
   return (
     <>
       {dataOfMedicine.map((v, i) => (
-        <Card data={v} key={i} />
+        <CardTwo data={v} key={i} />
       ))}
     </>
   )
