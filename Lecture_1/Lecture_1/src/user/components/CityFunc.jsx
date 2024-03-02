@@ -2,10 +2,13 @@
 import React from "react";
 import { useState } from "react";
 
-function CityFunc() {
+// eslint-disable-next-line react/prop-types
+function CityFunc(props) {
   const [changeCity, setchangeCity] = useState('Bengaluru');
   const [changeTimezone, setchangeTimezone] = useState('GMT+5:30');
 
+  // eslint-disable-next-line react/prop-types
+  console.log(props.countryName);
 
   const changeEver = () => {
     setchangeCity('Delhi');
@@ -15,7 +18,7 @@ function CityFunc() {
   return (
     <>
       <h1 className="text-3xl px-5 py-5 text-slate-900">
-        city : {changeCity}
+        city : {props.countryName === 'india' ? 'Delhi' : 'Nevada'}
       </h1>
       <h2 className="text-3xl px-5 py-5 text-slate-900">
         timezone : {changeTimezone}

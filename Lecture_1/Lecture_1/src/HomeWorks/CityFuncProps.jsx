@@ -4,9 +4,7 @@ import React, { useState } from "react";
 // eslint-disable-next-line react/prop-types
 const CityFuncProps = ({ changeCityProp, changeStateProp }) => {
 
-  // eslint-disable-next-line no-undef
   const [changeCity, setChangeCity] = useState(changeCityProp);
-  // eslint-disable-next-line no-undef
   const [changeState, setchangeState] = useState(changeStateProp);
 
   const changeEver = () => {

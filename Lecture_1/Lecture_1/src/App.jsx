@@ -3,11 +3,12 @@
 // import Country from "./user/components/Country"
 // import CountryFunc from "./user/components/CountryFunc";
 // import CounterFunc from "./Counter/CounterFunc";
-
-import CityFuncProps from "./HomeWorks/CityFuncProps";
-import CountryFuncProps from "./HomeWorks/CountryFuncProps";
-
+// import CityFuncProps from "./HomeWorks/CityFuncProps";
+// import CountryFuncProps from "./HomeWorks/CountryFuncProps";
 // import CounterClass from "./Counter/CounterClass";
+
+import MedicineData from "./user/container/MedicineData";
+
 
 const App = () => {
   return (
@@ -18,9 +19,12 @@ const App = () => {
       <CityFunc />
       <CounterFunc /> */}
       {/* <CounterClass /> */}
-
+      {/* 
       <CountryFuncProps changeCountryProp="India" changeCityProp="Delhi" />
-      <CityFuncProps changeCityProp="Nevada" changeStateProp="Las Vegas" />
+      <CityFuncProps changeCityProp="Nevada" changeStateProp="Las Vegas" /> */}
+      {/* <CountryFunc /> */}
+
+      <MedicineData />
 
     </>
   );
