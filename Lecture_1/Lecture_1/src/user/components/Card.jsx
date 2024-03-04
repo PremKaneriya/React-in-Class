@@ -1,12 +1,14 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
+// eslint-disable-next-line no-unused-vars
+import styles from "./Card.module.css";
 
 const Card = (data) => {
   console.log(data);
   return (
     <>
         <div>
-          <div className="bg-slate-200 m-5 w-1/3 border-solid border-2 border-black rounded-lg shadow-lg p-5 ">
+          <div className=" bg-slate-200 m-5 w-96 rounded-lg shadow-lg p-5 ">
             <h1 className="text-3xl font-bold mb-2">
               Doctor Name:
               <span className="text-blue-700"> {data.dataOfDocs.nameOfDocs}</span>

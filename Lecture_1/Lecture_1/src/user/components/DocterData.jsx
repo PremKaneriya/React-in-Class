@@ -1,6 +1,8 @@
 // eslint-disable-next-line no-unused-vars
 import React, { Component } from 'react'
 import Card from './Card';
+// eslint-disable-next-line no-unused-vars
+import styles from "./Card.module.css"
 
 // eslint-disable-next-line no-unused-vars
 const doctorsOfData = [
@@ -131,11 +133,13 @@ const doctorsOfData = [
 export default class DocterData extends Component {
   render() {
     return (
-      <>
+        // <div className={styles.Card} >
+      <div className="flex overflow-x-auto ">
         {doctorsOfData.map((doctor, indexOfDocs) => (
           <Card dataOfDocs={doctor} key={indexOfDocs} />
         ))}
-      </>
+      </div>
+    //   </div>
     )
   }
 }

@@ -1,7 +1,5 @@
-// eslint-disable-next-line no-unused-vars
 import React from "react";
 import CardTwo from "../components/CardTwo";
-// eslint-disable-next-line no-unused-vars
 const dataOfMedicine = [
   {
     id: 1,
@@ -39,13 +37,6 @@ const dataOfMedicine = [
     desc: "Meftal Spas tablet is an antispasmodic medicine. It contains a combination of dicyclomine and mefenamic acid. This medicine is used for relieving pain and spasm in the abdomen and during or before menses (periods).",
   },
   {
-    id: 6,
-    name: "Wegovy",
-    price: 85,
-    expiry: 2023,
-    desc: "WEGOVY® (semaglutide) injection 2.4 mg is an injectable prescription medicine that may help adults and children aged ≥12 years with obesity (BMI ≥30 for adults, BMI ≥ 95th percentile for age and sex for children), or some adults with excess weight (BMI ≥27) (overweight) who also have weight-related medical problems to help them lose weight and keep it off. Wegovy® should be used with a reduced calorie meal plan and increased physical activity",
-  },
-  {
     id: 7,
     name: "Aripiprazole",
     price: 85,
@@ -63,11 +54,11 @@ const dataOfMedicine = [
 
 const MedicineData = () => {
   return (
-    <>
+    <div className="flex overflow-x-auto">
       {dataOfMedicine.map((v, i) => (
         <CardTwo data={v} key={i} />
       ))}
-    </>
+    </div>
   )
 };
 
