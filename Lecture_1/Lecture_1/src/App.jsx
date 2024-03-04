@@ -7,9 +7,11 @@
 // import CountryFuncProps from "./HomeWorks/CountryFuncProps";
 // import CounterClass from "./Counter/CounterClass";
 
-import DocterData from "./user/components/DocterData";
+import ComponentLifeCycle from "./HomeWorks/ComponentLifeCycle";
 
-import MedicineData from "./user/container/MedicineData";
+// import DocterData from "./user/components/DocterData";
+
+// import MedicineData from "./user/container/MedicineData";
 
 
 const App = () => {
@@ -26,10 +28,12 @@ const App = () => {
       <CityFuncProps changeCityProp="Nevada" changeStateProp="Las Vegas" /> */}
       {/* <CountryFunc /> */}
 
-      <h1 className="text-3xl px-5 py-5 text-white bg-slate-900 text-center">Medicine - Data</h1>
+      {/* <h1 className="text-3xl px-5 py-5 text-white bg-slate-900 text-center">Medicine - Data</h1>
       <MedicineData />
       <h1 className="text-3xl px-5 py-5 text-white bg-slate-900 text-center">Doctors - Data</h1>
-      <DocterData />
+      <DocterData /> */}
+
+      <ComponentLifeCycle />
 
     </>
   );
