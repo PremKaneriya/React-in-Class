@@ -6,13 +6,12 @@
 // import CityFuncProps from "./HomeWorks/CityFuncProps";
 // import CountryFuncProps from "./HomeWorks/CountryFuncProps";
 // import CounterClass from "./Counter/CounterClass";
-
 // import ComponentLifeCycle from "./HomeWorks/ComponentLifeCycle";
-import ClassTimer from "./user/container/ClassTimer";
-
+// import ClassTimer from "./user/container/ClassTimer";
 // import DocterData from "./user/components/DocterData";
-
 // import MedicineData from "./user/container/MedicineData";
+
+import FuncTimer from "./user/container/FuncTimer";
 
 const App = () => {
   return (
@@ -22,20 +21,18 @@ const App = () => {
       <CountryFunc />
       <CityFunc />
       <CounterFunc /> */}
-      {/* <CounterClass /> */}
-      {/* 
+      {/* <CounterClass /> */}{/* 
       <CountryFuncProps changeCountryProp="India" changeCityProp="Delhi" />
       <CityFuncProps changeCityProp="Nevada" changeStateProp="Las Vegas" /> */}
       {/* <CountryFunc /> */}
-
       {/* <h1 className="text-3xl px-5 py-5 text-white bg-slate-900 text-center">Medicine - Data</h1>
       <MedicineData />
       <h1 className="text-3xl px-5 py-5 text-white bg-slate-900 text-center">Doctors - Data</h1>
       <DocterData /> */}
-
       {/* <ComponentLifeCycle /> */}
+      {/* <ClassTimer /> */}
 
-      <ClassTimer />
+      <FuncTimer />
     </>
   );
 };
