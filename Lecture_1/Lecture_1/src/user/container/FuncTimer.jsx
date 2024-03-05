@@ -24,9 +24,15 @@ const FuncTimer = () => {
 
   return (
     <>
-      <h1 className="text-3xl mt-5 px-5 py-5 text-slate-500">
-        Time : {timer.toLocaleTimeString()}
-      </h1> 
+      <div className="bg-gray-950 px-10 py-10 flex justify-center items-center shadow-slate-50 w-full h-screen">
+        <div className="bg-slate-200 w-96 rounded-2xl  drop-shadow-2xl  p-5 flex flex-col justify-center items-center">
+          <h1 className="text-3xl px-5 py-5 text-white bg-slate-800 shadow-slate-50 w-full rounded-xl">Digital Timer</h1>
+          <h1 className="text-3xl px-5 py-5 text-slate-800">
+            {timer.toLocaleTimeString()}
+          </h1>
+        </div>
+      </div>
+
     </>
   );
 };
