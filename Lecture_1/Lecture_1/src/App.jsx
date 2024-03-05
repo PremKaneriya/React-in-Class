@@ -10,8 +10,9 @@
 // import ClassTimer from "./user/container/ClassTimer";
 // import DocterData from "./user/components/DocterData";
 // import MedicineData from "./user/container/MedicineData";
+// import FuncTimer from "./user/container/FuncTimer";
 
-import FuncTimer from "./user/container/FuncTimer";
+import UseEffectExplanation from "./user/container/UseEffectExplanation";
 
 const App = () => {
   return (
@@ -32,7 +33,9 @@ const App = () => {
       {/* <ComponentLifeCycle /> */}
       {/* <ClassTimer /> */}
 
-      <FuncTimer />
+      {/* <FuncTimer /> */}
+
+      <UseEffectExplanation />
     </>
   );
 };
