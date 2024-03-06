@@ -12,11 +12,14 @@
 // import MedicineData from "./user/container/MedicineData";
 // import FuncTimer from "./user/container/FuncTimer";
 
+import { useState } from "react";
 import Product from "./user/container/Products/Product";
+import Header from "./user/container/Products/Header";
 
 // import UseEffectExplanation(FreeTime) from "./user/container/UseEffectExplanation(FreeTime)";
 
 const App = () => {
+  const [searchQuery, setSearchQuery] = useState("");
   return (
     <>
       {/* <Country />
@@ -38,8 +41,9 @@ const App = () => {
       {/* <FuncTimer /> */}
 
       {/* <UseEffectExplanation /> */}
-
-      <Product />
+      {/* eslint-disable-next-line no-undef */}
+      <Header setSearchQuery={setSearchQuery} />
+      <Product search={searchQuery} />
     </>
   );
 };

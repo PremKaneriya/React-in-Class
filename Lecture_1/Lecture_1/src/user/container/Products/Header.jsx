@@ -1,6 +1,11 @@
 import React from "react";
 
-const Header = () => {
+// eslint-disable-next-line react/prop-types
+const Header = ({ setSearchQuery }) => {
+  const handleSearch = (e) => {
+    setSearchQuery(e.target.value);
+  };
+
   return (
     <>
       <nav className=" py-4 px-5 text-white flex items-center">
@@ -35,7 +40,8 @@ const Header = () => {
           <input
             type="text"
             placeholder="Search"
-            className="border-2 border-gray-300 bg-white h-10 px-5 pr-44 rounded-lg text-sm focus:outline-none"
+            className="border-2 border-gray-300 text-black bg-white h-10 px-5 pr-44 rounded-lg text-sm focus:outline-none"
+            onChange={handleSearch}
           />
           <button type="submit" className="absolute right-0 top-0 mt-3 mr-4">
             <svg
