@@ -12,7 +12,9 @@
 // import MedicineData from "./user/container/MedicineData";
 // import FuncTimer from "./user/container/FuncTimer";
 
-import UseEffectExplanation from "./user/container/UseEffectExplanation";
+import Product from "./user/container/Products/Product";
+
+// import UseEffectExplanation(FreeTime) from "./user/container/UseEffectExplanation(FreeTime)";
 
 const App = () => {
   return (
@@ -35,7 +37,9 @@ const App = () => {
 
       {/* <FuncTimer /> */}
 
-      <UseEffectExplanation />
+      {/* <UseEffectExplanation /> */}
+
+      <Product />
     </>
   );
 };

@@ -16,11 +16,7 @@ const FuncTimer = () => {
       clearInterval(timeRef);
       console.log("Component Will Unmount");
     };
-  }, []);
-
-  useEffect(() => {
-    console.log("Component Did Mount");
-  }, [timer]);
+  }, []); // <= Dependency Array 
 
   return (
     <>
