@@ -1,5 +1,5 @@
 import React from "react";
-import CardTwo from "../components/CardTwo";
+import CardTwo from "../../components/CardTwo";
 const dataOfMedicine = [
   {
     id: 1,
