@@ -8,7 +8,7 @@ const Header = ({ setSearchQuery }) => {
 
   return (
     <>
-      <nav className=" py-4 px-5 text-white flex items-center">
+      <nav className=" py-4 px-5 text-white flex items-center bg-white">
         <div>
           <img
             src="https://www.freepnglogos.com/uploads/logo-myntra-png/myntra-logo-m-png-3.png"

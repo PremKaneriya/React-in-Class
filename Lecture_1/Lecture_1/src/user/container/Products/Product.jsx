@@ -22,9 +22,9 @@ const Product = ({ search }) => {
 
   return (
     <>
-    <div className=" font-bold p-4 mr-16 ml-12 rounded bg-slate-400  ">
+    <div className=" font-bold p-4 mr-16 ml-12 rounded ">
       <div>
-        <select name="" id="" className=" p-2 rounded-md cursor-pointer" >
+        <select name="" id="" className=" p-2 rounded-md bg-pink-200 cursor-pointer" >
           <option value="">Select Catagory</option>
           <option value="electronics">electronics
           </option>
@@ -34,7 +34,7 @@ const Product = ({ search }) => {
           <option value="women's clothing">womens clothing
           </option>
         </select>
-        <select name="" id="" className=" p-2 rounded-md cursor-pointer ml-4">
+        <select name="" id="" className=" p-2 rounded-md bg-pink-200 cursor-pointer ml-4">
           <option value="">Sorting</option>
           <option value="ascending">A to Z</option>
           <option value="descending">Z to A</option>
