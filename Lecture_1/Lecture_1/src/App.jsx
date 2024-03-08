@@ -9,6 +9,7 @@ const App = () => {
     <>
 
       <Header setSearchQuery={setSearchQuery} />
+      
       <Product search={searchQuery} />
       <Footer/>
     </>
