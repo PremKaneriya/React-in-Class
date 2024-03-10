@@ -4,8 +4,8 @@ import Loader from "./Loader";
 const Product = ({ search }) => {
   const [productData, setProductData] = useState([]);
   const [sorting, setSorting] = useState("");
-  const [category, setcategory] = useState('')
-  const [loading, setloading] = useState(true)
+  const [category, setcategory] = useState("");
+  const [loading, setloading] = useState(true);
 
   useEffect(() => {
     getData();
@@ -15,17 +15,16 @@ const Product = ({ search }) => {
     const res = await fetch("https://fakestoreapi.com/products");
     const data = await res.json();
 
-    setTimeout(() => {
-      setProductData(data);
-      setloading(false)
-    }, 2000);
+    setProductData(data);
+    setloading(false);
   };
 
   const allFilterData = () => {
-    let filteredProducts = productData.filter((product) =>
-      // eslint-disable-next-line react/prop-types
-      product.title.toLowerCase().includes(search.toLowerCase()) ||
-      product.price.toString().includes(search)
+    let filteredProducts = productData.filter(
+      (product) =>
+        // eslint-disable-next-line react/prop-types
+        product.title.toLowerCase().includes(search.toLowerCase()) ||
+        product.price.toString().includes(search)
     );
 
     filteredProducts = filteredProducts.sort((a, b) => {
@@ -38,7 +37,7 @@ const Product = ({ search }) => {
       } else if (sorting === "descending") {
         return b.title.localeCompare(a.title);
       }
-    })
+    });
 
     filteredProducts = filteredProducts.filter((product) => {
       if (category === "electronics") {
@@ -50,12 +49,11 @@ const Product = ({ search }) => {
       } else if (category === "womenclothing") {
         return product.category === "women's clothing";
       } else {
-        return product; 
+        return product;
       }
-    })
+    });
 
     return filteredProducts;
-
   };
 
   const finalData = allFilterData();
@@ -65,7 +63,7 @@ const Product = ({ search }) => {
       <div className=" font-bold p-2 mr-16 ml-12 rounded-xl border-2 border-solid border-gray-300 justify-between flex items-center">
         <div>
           <select
-            className={`p-2 rounded-md cursor-pointer text-center bg-pink-200` }
+            className={`p-2 rounded-md cursor-pointer text-center bg-pink-200`}
             onChange={(e) => setcategory(e.target.value)}
             defaultValue={"0"}
           >
@@ -87,15 +85,37 @@ const Product = ({ search }) => {
           </select>
         </div>
         <div className="flex gap-5 items-center ml-3 mr-3">
-          <a href="#" value="electronics" onClick={() => setcategory("electronics")} >Electronics</a>
-          <a href="#" value="jewelery" onClick={() => setcategory("jewelery")}>Jewelery</a>
-          <a href="#" value="menclothing" onClick={() => setcategory("menclothing")}>Mens clothing</a>
-          <a href="#" value="womenclothing" onClick={() => setcategory("womenclothing")}>Womens clothing</a>
-          <a href="#" onClick={() => setcategory("")}>All Products</a>
+          <a
+            href="#"
+            value="electronics"
+            onClick={() => setcategory("electronics")}
+          >
+            Electronics
+          </a>
+          <a href="#" value="jewelery" onClick={() => setcategory("jewelery")}>
+            Jewelery
+          </a>
+          <a
+            href="#"
+            value="menclothing"
+            onClick={() => setcategory("menclothing")}
+          >
+            Mens clothing
+          </a>
+          <a
+            href="#"
+            value="womenclothing"
+            onClick={() => setcategory("womenclothing")}
+          >
+            Womens clothing
+          </a>
+          <a href="#" onClick={() => setcategory("")}>
+            All Products
+          </a>
           <a href="#">My Account</a>
         </div>
       </div>
- 
+
       {loading ? <Loader /> : null}
       <div className="grid grid-cols-4 gap-4 p-12">
         {finalData.map((product, index) => (
@@ -113,12 +133,16 @@ const Product = ({ search }) => {
             </h1>
             <p className="text-gray-600 px-2">Price: {product.price}</p>
 
-            <p className="mt-1 text-gray-600 px-2">Category: {product.category}</p>
+            <p className="mt-1 text-gray-600 px-2">
+              Category: {product.category}
+            </p>
             <div className="flex items-center  mt-2">
               <p className="mr-2 text-gray-600 px-2 mb-2">Rating:</p>
               <p className="mb-2">{product.rating.rate}</p>
               <span className="mx-1 text-yellow-500 mb-2">&#9733;</span>
-              <p className="text-gray-600 px-2 mb-2" >({product.rating.count} reviews)</p>
+              <p className="text-gray-600 px-2 mb-2">
+                ({product.rating.count} reviews)
+              </p>
             </div>
           </div>
         ))}
