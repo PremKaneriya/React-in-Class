@@ -38,7 +38,7 @@ const Slider = ({ images }) => {
 
   return (
     <>
-      <div className="relative h-screen w-full">
+      <div className="relative h-96 w-full ">
 
         {images.map((image, index) => (
           <img
