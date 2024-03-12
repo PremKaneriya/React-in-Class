@@ -4,7 +4,7 @@ import React from "react";
 const VideoCompo = () => {
   return (
     <>
-       <div className="p-16 bg-gradient-to-b from-yellow-300 to-white">    
+       <div className="p-16 pt-32 bg-gradient-to-b from-yellow-300 to-white">    
       <h1 className="text-4xl font-bold mb-4">#PhirSeZiddKar</h1>
       <iframe 
         width="100%" 
