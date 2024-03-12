@@ -1,65 +1,55 @@
 /* eslint-disable no-unused-vars */
-
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 
 const products = [
   {
     id: 1,
-    img: "https://img7.hkrtcdn.com/27176/prd_2717576-MuscleBlaze-Biozyme-Performance-Whey-2.2-lb-Rich-Chocolate_c_m.jpg",
-    name: "Biozyme Performance Whey",
-    price: "₹1,499",
-    oldPrice: "₹1,999",
-    discount: "10%",
-    description: "2.2 lb Rich Chocolate",
-    rating: "Premium",
+    img: "https://img10.hkrtcdn.com/31122/prd_3112159-MuscleBlaze-Omega-3-Fish-Oil-1000-mg-with-180mg-EPA-and-120mg-DHA-90-capsules_c_s.jpg",
+    name: "Omega 3 Fish Oil (1000 mg) with 180mg EPA and 120mg DHA",
+    price: "₹599",
+    oldPrice: "₹999",
+    discount: "20%",
+    description: "90 capsules",
+    rating: "Standard",
   },
   {
     id: 2,
-    img: "https://img10.hkrtcdn.com/29763/prd_2976269-MuscleBlaze-Mass-Gainer-XXL-with-Complex-Carbs-and-Proteins-in-31-ratio-4.4-lb-Chocolate_c_m.jpg",
-    name: "Mass Gainer XXL",
-    price: "₹2,099",
-    oldPrice: "₹2,499",
+    img: "https://img2.hkrtcdn.com/32066/prd_3206541-MuscleBlaze-Omega-3-Fish-Oil-Gold-3x-Triple-Strength-EPA-DHA-60-capsules_c_s.jpg",
+    name: "Omega 3 Fish Oil Gold 3x Triple Strength (EPA & DHA)",
+    price: "₹849",
+    oldPrice: "₹999",
     discount: "50%",
-    description: "  4.4 lb  Chocolate ",
+    description: "60 capsules ",
     rating: "Premium",
   },
   {
     id: 3,
-    img: "https://img8.hkrtcdn.com/32169/prd_3216827-MuscleBlaze-Creatine-Monohydrate-0.88-lb-Unflavoured_c_m.jpg",
-    name: "Creatine Monohydrate CreAMP,",
-    price: "₹ 499",
-    oldPrice: "₹1,112",
+    img: "https://img2.hkrtcdn.com/28511/prd_2851051-MuscleBlaze-CreaPRO-Creatine-with-Creapure-Powder-from-Germany-0.55-lb-Unflavoured_c_s.jpg",
+    name: "CreaPRO Creatine with Creapure® Powder from Germany",
+    price: "₹1,149",
+    oldPrice: "₹1,649",
     discount: "30%",
-    description: "  0.88 lb  Unflavoured ",
-    rating: "Standard",
+    description: "0.55 lb, Unflavoured ",
+    rating: "Premium",
   },
   {
     id: 4,
-    img: "https://img9.hkrtcdn.com/22852/prd_2285188-MuscleBlaze-Protein-Bar-20-gm-Protein-6-bars-Cookies-Cream_c_m.jpg",
-    name: "High Protein Muesli,",
-    price: "₹ 699",
-    oldPrice: "₹ 999",
-    discount: "10%",
-    description: "  1 kg  Dark Chocolate & Cranberry ",
+    img: "https://img2.hkrtcdn.com/10732/prd_1073171-MuscleBlaze-Citrulline-Malate-0.22-lb-Unflavored_c_s.jpg",
+    name: "L Citrulline Malate",
+    price: "₹ 412",
+    oldPrice: "₹ 425",
+    discount: "23%",
+    description: "0.22 lb, Unflavored ",
     rating: "Standard",
   },
-  // {
-  //   id: 5,
-  //   img: "https://img8.hkrtcdn.com/29896/prd_2989517-MuscleBlaze-High-Protein-Peanut-Butter-1-kg-Dark-Chocolate-Creamy_c_m.jpg",
-  //   name: "High Protein Peanut Butter,",
-  //   price: "₹ 999",
-  //   oldPrice: "₹ 1,999",
-  //   discount: "10%",
-  //   description: "  1 kg  Dark Chocolate Creamy ",
-  //   rating: "Premium",
-  // },
 ];
 
-const Products = () => {
+const ProductsTwo = () => {
   return (
     <>
-      <div className="grid grid-cols-5 bg-gradient-to-b from-yellow-300 to-white pt-12 mt-44 pr-9 pb-8 pl-16 gap-4">
-      <h1 className="text-5xl font-semibold">Popular</h1>
+      <div className="grid grid-cols-5 bg-gradient-to-t from-yellow-300 to-white pt-12 pr-9 pb-8 pl-16 gap-4">
+        <h1 className="text-5xl font-semibold">Amino Acids</h1>
         {products.map((product) => (
           <div key={product.id} className="bg-white  p-4 rounded-md shadow-md">
             <img
@@ -106,4 +96,4 @@ const Products = () => {
   );
 };
 
-export default Products;
+export default ProductsTwo;

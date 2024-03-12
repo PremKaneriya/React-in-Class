@@ -8,7 +8,7 @@ import { faWallet } from '@fortawesome/free-solid-svg-icons';
 const Header = () => {
   return (
     <>
-      <nav className="cursor-pointer flex items-center h-24 justify-between px-8 bg-white shadow-2xl">
+      <nav className="fixed top-0 w-full z-10 cursor-pointer flex items-center h-24 justify-between px-8 bg-white shadow-xl">
        <div className="flex items-center">
        <div>
           <img
@@ -36,7 +36,7 @@ const Header = () => {
         </div>
         </div>
       </nav>
-      <div className="dropDowns flex justify-between items-center font-semibold px-20 bg-white mt-2">
+      <div className="dropDowns mt-24 flex justify-between items-center font-semibold px-16 bg-white mt-2">
         <div>
             <select className="p-6 text-center bg-transparent" name="" id="">
                 <option value="0">ALL PRODUCTS</option>
