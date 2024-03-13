@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 // eslint-disable-next-line no-unused-vars
 import { faWallet } from '@fortawesome/free-solid-svg-icons';
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -25,6 +26,7 @@ const Header = () => {
           />
         </div>
        </div>
+
         <div className="flex items-center px-5">
             
         <div className="flex items-center">
@@ -36,8 +38,8 @@ const Header = () => {
         </div>
         </div>
       </nav>
-      <div className="dropDowns mt-24 flex justify-between items-center font-semibold px-16 bg-white mt-2">
-        <div>
+      <div className="dropDowns mt-24 flex justify-around items-center font-semibold px-16 bg-white ">
+        {/* <div>
             <select className="p-6 text-center bg-transparent" name="" id="">
                 <option value="0">ALL PRODUCTS</option>
                 <option value="protine">PROTEINS</option>
@@ -69,7 +71,11 @@ const Header = () => {
         </div>
         <div className="p-6 text-center">
             <h1>CHAT SUPPORT</h1>
-        </div>
+        </div> */}
+        <NavLink to="/" className="mr-5 font-semibold text-2xl underline" href="#">Home</NavLink>
+        <NavLink to="/healthproducts" className="mr-5 font-semibold text-2xl underline " href="#">Products</NavLink>
+        <a className="mr-5 font-semibold text-2xl underline" href="#">Cart</a>
+        <a className="mr-5 font-semibold text-2xl underline" href="#">Checkout</a>
       </div>
     </>
   );
