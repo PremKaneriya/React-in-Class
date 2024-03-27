@@ -1,26 +1,28 @@
-import React from 'react'
-import { useDispatch } from 'react-redux'; 
-import { decrement, increment } from '../../../redux/Actions/counter.action'
+import React from "react";
+import { useDispatch } from "react-redux";
+import { decrement, increment } from "../../../redux/Actions/counter.action";
+import { useSelector } from "react-redux";
 
 const Counter = () => {
-    const dispatch = useDispatch()
-    
-    const countInc = () => {
-        dispatch(increment)
-    }
+  const count = useSelector(state => state.counter);
+  console.log(count); 
 
-    const countDec = () => {
-        dispatch(decrement)
-    }
-  return (    
+  const dispatch = useDispatch();
+
+  const countInc = () => {
+    dispatch(increment());
+  };
+
+  const countDec = () => {
+    dispatch(decrement());
+  };
+  return (
     <>
-     <button onClick={countInc}> + </button>
-     {
-        0
-     } 
-     <button onClick={countDec}> - </button>
+      <button onClick={countInc}> + </button>
+      {<h1>{count}</h1>}
+      <button onClick={countDec}> - </button>
     </>
-  )
-}
+  );
+};
 
-export default Counter
+export default Counter;
